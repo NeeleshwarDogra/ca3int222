@@ -221,3 +221,12 @@ option {
     }
 }
 
+#chat-form h3{
+    color: white;
+    display: flex;
+    margin-right: 1rem;;
+    align-items: center;
+    padding:0.5rem;
+    border:var(--success-color) 1px solid;
+    border-radius: 1rem;
+}

@@ -2,12 +2,15 @@ const chatForm = document.getElementById("chat-form");
 const chatMessages = document.querySelector(".chat-messages");
 const roomName = document.getElementById("room-name");
 const userList = document.getElementById("users")
+const currentUser = document.getElementById("currentUser");
 
 const { username, room } = Qs.parse(location.search, {
         ignoreQueryPrefix: true
 })
 
 console.log(username, room)
+
+currentUser.innerText = username;
 
 const socket = io();
 

@@ -25,7 +25,7 @@ io.on("connection", (socket) => {
 
         socket.join(user.room);
 
-        socket.emit("message", formatMessage("ChatBot", "Welcome!!"));
+        socket.emit("message", formatMessage("ChatBot", `Welcome ${user.username}`));
 
         socket.broadcast
             .to(user.room)
